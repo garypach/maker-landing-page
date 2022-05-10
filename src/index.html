@@ -1,13 +1,355 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <title>My First Parcel App</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="app.js"></script>
-  </head>
-  <body>
-    <h1>Hello, Parcel!</h1>
-    <p>This is a vanilla web app built with Parcel 2!<br>Check out the <a href="https://parceljs.org/getting-started/webapp/" target="_blank">getting started guide</a> and the <a href="https://parceljs.org/docs/" target="_blank">documentation</a> to learn more!</p>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maker</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap" rel="stylesheet">
+  <script type="module" src="app.js"></script>
+</head>
+
+<body>
+  <header class="
+  bg-[#080C20]
+  flex
+  justify-center
+  items-center
+  w-full
+  min-h-[141px]
+  sm:justify-start
+  
+   ">
+    <div class="sm:ml-[39px]">
+      <img src="./public/assets/logo.svg" alt="Maker logo" />
+    </div>
+  </header>
+  <section id="hero" class="bg-[#080C20] w-full flex flex-col justify-center items-center sm:min-h-[357px] lg:min-h-[459px]">
+    <div class="relative overflow-hidden w-full h-[232px] sm:hidden">
+      <img class=" 
+      absolute
+      object-cover
+      w-full
+      max-h-full
+      min-h-full
+      translate-y-3
+      translate-x-4
+      scale-[1.1]
+      sm:hidden
+      " src="./public/assets/illustration-hero-mobile.png" alt="illustration-hero-mobile" />
+    </div>
+    <div class="absolute overflow-hidden w-full left-0  sm:max-w-[330px] h-[400px]">
+      <img class=" 
+      absolute
+      object-cover
+      w-full
+      max-h-full
+      translate-x-[-190px]
+      hidden
+      sm:block
+      lg:translate-x-[-50px]
+      " src="./public/assets/illustration-hero-left.svg" alt="illustration-hero-mobile" />
+    </div>
+    <div class="absolute overflow-hidden w-full h-[357px] top-[200px] sm:max-w-[386px] lg:max-w-[490px] ">
+      <img class=" 
+      absolute
+      object-cover
+      w-full
+      max-h-full
+      translate-x-4
+      hidden
+      sm:block
+      " src="./public/assets/bg-hero-squiggle.svg" alt="illustration-hero-mobile" />
+    </div>
+    <div class="absolute overflow-hidden w-full h-[400px] right-0  sm:max-w-[330px]">
+      <img class=" 
+      absolute
+      object-cover
+      w-full
+      max-h-full
+      translate-x-[190px]
+      hidden
+      sm:block
+      lg:translate-x-[50px]
+      " src="./public/assets/illustration-hero-right.svg" alt="illustration-hero-mobile" />
+    </div>
+    <div class="relative z-10 w-full max-w-[327px] flex flex-col justify-center items-center mt-[48.7px] sm:max-w-[457px] lg:max-w-[730px]">
+      <div class="font-[800] text-white text-[32px] leading-[40px] text-center lg:text-[48px] lg:leading-[56px]">
+        Get paid for the work you <span class="text-[#3EE9E5]">love</span> to do.
+      </div>
+      <div class="font-[500] text-[#777F98] text-[15px] leading-[25px] text-center mt-[23px]">
+        The 9-5 grind is so last century. We believe in living life on your
+        own terms. Whether you're looking to escape the rat race or set up
+        a side hustle, we've got you covered.
+      </div>
+      <div class="relative overflow-hidden w-[26px] h-[42px] mt-[32px]">
+        <img class=" 
+        absolute
+        object-cover
+        w-full
+        max-h-full
+        " src="./public/assets/icon-scroll.svg" alt="icon-scroll" />
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section id="perks" class="bg-[#080C20] w-full flex flex-col justify-center items-center pt-[144px] lg:pt-[202px]">
+    <div class="w-full max-w-[327px] flex flex-col justify-center items-center sm:max-w-[573px] lg:max-w-[1110px] lg:flex-row ">
+      <div class="flex flex-col justify-center items-center sm:flex-row sm:justify-between sm:w-full sm:max-w-[515px] lg:max-w-[255px] lg:flex-col lg:items-start lg:min-h-[335px] lg:max-h-[335px]">
+        <div class="rounded-[45px] bg-[#093F68] w-full max-w-[120px] h-[124px] flex flex-col justify-center items-center lg:max-w-[160px] lg:h-[164px]">
+          <div class="relative overflow-hidden w-[66px] h-[80px] lg:w-[88px] lg:h-[106px]">
+            <img class=" 
+            absolute
+            object-cover
+            w-full
+            max-h-full
+            " src="./public/assets/illustration-passions.svg" alt="icon-scroll" />
+            </div>
+        </div>
+        <div class="sm:flex sm:flex-col sm:w-full sm:max-w-[340px] ">
+          <div class="font-[800] text-white text-[18px] leading-[25px] text-center mt-[32px] sm:m-0 sm:text-left">
+            Indulge your passions
+          </div>
+          <div class="font-[500] text-[#777F98] text-[15px] leading-[25px] text-center mt-[11px] sm:text-left">
+            Your passions shouldn't be just for the weekend. Earn a living doing what you love.
+          </div>
+        </div>
+       
+        </div>
+        <div class="flex flex-col justify-center items-center mt-[32px] sm:flex-row sm:justify-between sm:w-full sm:max-w-[515px] sm:mr-[58px] sm:mt-[40px] lg:m-0 lg:ml-[30px] lg:mt-[48px] lg:max-w-[255px] lg:flex-col lg:items-start lg:min-h-[335px] lg:max-h-[335px]">
+          <div class="rounded-[45px] bg-[#093F68] w-full max-w-[120px] h-[124px] flex flex-col justify-center items-center lg:max-w-[160px] lg:h-[164px]">
+            <div class="relative overflow-hidden w-[56px] h-[67px] lg:w-[74px] lg:h-[89px] ">
+              <img class=" 
+              absolute
+              object-cover
+              w-full
+              max-h-full
+              " src="./public/assets/illustration-financial-freedom.svg" alt="icon-scroll" />
+              </div>
+          </div>
+          <div class="sm:flex sm:flex-col sm:w-full sm:max-w-[340px] ">
+          <div class="font-[800] text-white text-[18px] leading-[25px] text-center mt-[32px] sm:m-0 sm:text-left ">
+            Gain financial freedom
+          </div>
+          <div class="font-[500] text-[#777F98] text-[15px] leading-[25px] text-center mt-[11px] sm:text-left">
+            Start making money work for you. There's nothing quite like earning while you sleep.
+          </div>
+        </div>
+          </div>
+          <div class="flex flex-col justify-center items-center mt-[32px] sm:flex-row sm:justify-between sm:w-full sm:max-w-[515px] sm:mt-[40px] lg:m-0 lg:ml-[30px] lg:max-w-[255px] lg:flex-col lg:items-start lg:min-h-[335px] lg:max-h-[335px]">
+            <div class="rounded-[45px] bg-[#093F68] w-full max-w-[120px] h-[124px] flex flex-col justify-center items-center lg:max-w-[160px] lg:h-[164px]">
+              <div class="relative overflow-hidden w-[60px] h-[71px] lg:w-[80px] lg:h-[94px]">
+                <img class=" 
+                absolute
+                object-cover
+                w-full
+                max-h-full
+                " src="./public/assets/illustration-lifestyle.svg" alt="icon-scroll" />
+                </div>
+            </div>
+            <div class="sm:flex sm:flex-col sm:w-full sm:max-w-[340px] ">
+
+            <div class="font-[800] text-white text-[18px] leading-[25px] text-center mt-[32px] sm:m-0 sm:text-left">
+              Choose your lifestyle
+            </div>
+            <div class="font-[500] text-[#777F98] text-[15px] leading-[25px] text-center mt-[11px] sm:text-left">
+              Own your daily schedule. Fancy a lie-in? Go for it! Take charge of your week.
+            </div>
+            </div>
+          </div>
+            <div class="flex flex-col justify-center items-center mt-[32px] sm:flex-row sm:justify-between sm:w-full sm:max-w-[515px] sm:mr-[58px] sm:mt-[40px] lg:m-0 lg:ml-[30px] lg:mt-[48px] lg:max-w-[255px] lg:flex-col lg:items-start lg:min-h-[335px] lg:max-h-[335px]">
+              <div class="rounded-[45px] bg-[#093F68] w-full max-w-[120px] h-[124px] flex flex-col justify-center items-center lg:max-w-[160px] lg:h-[164px]">
+                <div class="relative overflow-hidden w-[78px] h-[56px] lg:w-[104px] lg:h-[74px]">
+                  <img class="absolute object-cover w-full max-h-full" 
+                  src="./public/assets/illustration-work-anywhere.svg" 
+                  alt="icon-scroll"
+                   />
+                  </div>
+              </div>
+              <div class="sm:flex sm:flex-col sm:w-full sm:max-w-[340px] ">
+              <div class="font-[800] text-white text-[18px] leading-[25px] text-center mt-[32px] sm:m-0 sm:text-left ">
+                Work from anywhere
+              </div>
+              <div class="font-[500] text-[#777F98] text-[15px] leading-[25px] text-center mt-[11px] sm:text-left">
+                Selling online means not being pinned down. Want to work AND travel? Go for it!
+              </div>
+              </div>
+            </div>
+    </div>
+  </section>
+
+<section id="pricing" class="bg-[#080C20] w-full flex flex-col justify-center items-center pt-[144px] lg:pt-[202px]">
+  <div class="w-full max-w-[327px] flex flex-col justify-center items-center sm:max-w-[537px] lg:max-w-[540px]">
+    <div class="flex flex-col justify-center items-center">
+      <div class="font-[800] text-white text-[18px] leading-[25px] text-center sm:text-[24px] sm:leading-[33px] lg:text-[32px] lg:leading-[44px]">
+        Our pricing plans
+      </div>
+      <div class="font-[500] text-[#777F98] text-[15px] leading-[25px] text-center mt-[27px] lg:mt-[24px]">
+        We only make money when our creators make money. Our plans are always affordable, and
+        it's completely free to get started.     
+       </div>
+      </div>
+      <div class="lg:flex lg:w-full lg:items-center lg:justify-between lg:min-w-[920px]">
+
+    
+      <div class=" bg-[#093F68] rounded-[8px] pl-[30px] pt-[49px] pb-[32px] flex flex-col justify-center items-start relative w-full max-w-[327px] mt-[79px] sm:max-w-[445px] lg:mt-[72px]">
+        <div class="absolute top-[-23px] left-[30px] overflow-hidden w-[46px] h-[46px] ">
+            <img class="absolute object-cover w-full max-h-full" 
+            src="./public/assets/icon-free.svg" 
+            alt="icon-free"
+             />
+        </div>
+    
+        <div class="font-[800] text-white text-[18px] leading-[25px]">
+          Dip your toe
+        </div>
+        <div class="font-[500] text-[#777F98] text-[15px] leading-[25px]  mt-[19px]">
+          Just getting started? No problem at all! Our free plan will take you a long way.
+        </div>
+        <div class="font-[800] text-white text-[40px] leading-[55px] mt-[26px]">
+          Free
+        </div>
+        <ul class=" w-full flex flex-col justify-between items-start mt-[19px]">
+          <li class="w-full  flex  items-center">
+            <div class="relative overflow-hidden w-[11px] h-[9px] ">
+              <img class="absolute object-cover w-full max-h-full" 
+              src="./public/assets/icon-check.svg" 
+              alt="icon-free"
+               />
+              </div>
+      
+          <div class="font-[500] text-white text-[15px] leading-[25px] text-center  ml-[15.32px]">
+            Unlimited products
+          </div>
+          </li>
+          <li class="w-full flex  items-center mt-[12px]">
+            <div class="relative overflow-hidden w-[11px] h-[9px] ">
+              <img class="absolute object-cover w-full max-h-full" 
+              src="./public/assets/icon-check.svg" 
+              alt="icon-free"
+               />
+              </div>
+      
+          <div class="font-[500] text-white text-[15px] leading-[25px] text-center ml-[15.32px]">
+            Basic analytics
+          </div>
+          </li>
+          <li class="w-full flex items-center mt-[12px]">
+            <div class="relative overflow-hidden w-[11px] h-[9px] ">
+              <img class="absolute object-cover w-full max-h-full" 
+              src="./public/assets/icon-check.svg" 
+              alt="icon-free"
+               />
+              </div>
+      
+          <div class="font-[500] text-white text-[15px] leading-[25px] text-center ml-[15.32px]">
+            Limited marketplace exposure
+          </div>
+          </li>
+          <li class="w-full flex items-center mt-[12px]">
+            <div class="relative overflow-hidden w-[11px] h-[9px] ">
+              <img class="absolute object-cover w-full max-h-full" 
+              src="./public/assets/icon-check.svg" 
+              alt="icon-free"
+               />
+              </div>
+      
+          <div class="font-[500] text-white text-[15px] leading-[25px] text-center ml-[15.32px]">
+            10% fee per transaction
+          </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class=" bg-[#3EE9E5] rounded-[8px] pl-[30px] pt-[61px] pb-[32px] flex flex-col justify-center items-start relative w-full max-w-[327px] mt-[79px] sm:max-w-[445px]">
+        <div class="absolute top-[-23px] left-[30px] overflow-hidden w-[51px] h-[65px] ">
+            <img class="absolute object-cover w-full max-h-full" 
+            src="./public/assets/icon-paid.svg" 
+            alt="icon-free"
+             />
+        </div>
+    
+        <div class="font-[800] text-[#080C20] text-[18px] leading-[25px]">
+          Dive right in
+        </div>
+        <div class="font-[500] text-[#080C20] text-[15px] leading-[25px]  mt-[19px]">
+          Ready for the big time? Our paid plan will help you take your business to the next level.
+        </div>
+        <div class="font-[800] text-[#080C20] text-[40px] leading-[55px] mt-[26px]">
+          $25.00 <span class="font-[500] text-[#080C20] text-[15px] leading-[25px]">/ month</span>
+
+        </div>
+        <ul class=" w-full flex flex-col justify-between items-start mt-[19px]">
+          <li class="w-full flex  items-center">
+            <div class="relative overflow-hidden w-[11px] h-[9px] text-[#080C20] ">
+              <svg class="absolute object-cover w-full max-h-full" xmlns="http://www.w3.org/2000/svg" width="12" height="9"><path fill="#080C20" d="M10.319.768l1.363 1.464-7.128 6.634L.319 4.924 1.682 3.46l2.871 2.674z"/></svg>
+
+              </div>
+      
+          <div class="font-[500] text-[#080C20] text-[15px] leading-[25px] text-center  ml-[15.32px]">
+            Custom domain
+
+          </div>
+          </li>
+          <li class="w-full flex  items-center mt-[12px]">
+            <div class="relative overflow-hidden w-[11px] h-[9px] ">
+              <svg class="absolute object-cover w-full max-h-full" xmlns="http://www.w3.org/2000/svg" width="12" height="9"><path fill="#080C20" d="M10.319.768l1.363 1.464-7.128 6.634L.319 4.924 1.682 3.46l2.871 2.674z"/></svg>
+
+              </div>
+      
+          <div class="font-[500] text-[#080C20] text-[15px] leading-[25px] text-center ml-[15.32px]">
+            Advanced analytics and reports
+
+          </div>
+          </li>
+          <li class="w-full flex items-center mt-[12px]">
+            <div class="relative overflow-hidden w-[11px] h-[9px] ">
+               <svg class="absolute object-cover w-full max-h-full" xmlns="http://www.w3.org/2000/svg" width="12" height="9"><path fill="#080C20" d="M10.319.768l1.363 1.464-7.128 6.634L.319 4.924 1.682 3.46l2.871 2.674z"/></svg>
+              </div>
+      
+          <div class="font-[500] text-[#080C20] text-[15px] leading-[25px] text-center ml-[15.32px]">
+            High marketplace visibility
+
+          </div>
+          </li>
+          <li class="w-full flex items-center mt-[12px]">
+            <div class="relative overflow-hidden w-[11px] h-[9px] ">
+              <svg class="absolute object-cover w-full max-h-full" xmlns="http://www.w3.org/2000/svg" width="12" height="9"><path fill="#080C20" d="M10.319.768l1.363 1.464-7.128 6.634L.319 4.924 1.682 3.46l2.871 2.674z"/></svg>
+
+              </div>
+      
+          <div class="font-[500] text-[#080C20] text-[15px] leading-[25px] text-center ml-[15.32px]">
+            5% fee per transaction
+
+          </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<section id="email" class="bg-[#080C20] w-full flex flex-col justify-center items-center pt-[144px] pb-[164px]">
+  <div class="w-full max-w-[327px] flex flex-col justify-center items-center sm:max-w-[476px]">
+    <div  class="font-[800] text-white text-[24px] leading-[33px] text-center lg:text-[32px] lg:leading-[44px]">
+      Get notified when we launch
+    </div>
+
+    <div class="w-full max-w-[327px] mt-[31px] sm:flex  sm:justify-between sm:items-center sm:max-w-[476px] " >
+      <div class="relative w-full max-w-[327px] sm:max-w-[320px] ">
+        <input type="text" class="email-input w-full bg-[#093F68] text-white py-[12px] pl-[30px] rounded-[24px] focus:outline-none focus:border-transparent focus:ring-0 border-[1px] border-[#093F68] placeholder:font-[800] placeholder:text-white placeholder:opacity-[.5] placeholder:text-[15px] placeholder:leading-[25px]" placeholder="Email address"/>
+        <p class="email-error hidden mt-[4px] ml-[18px] font-[500] text-[#FF2965] text-[12px] leading-[25px] sm:absolute">Oops! That doesn't look like an email address</p>
+        <p class="email-success hidden ml-[18px] mt-[4px] font-[500] text-[#3EE9E5] text-[12px] leading-[25px] sm:absolute">Notification Success</p>
+      </div>
+      <button class="email-button w-full bg-[#3EE9E5] border border-[#3EE9E5] hover:bg-transparent font-[800] text-[#093F68] hover:text-white text-[15px] leading-[25px] py-[12px] rounded-[24px] mt-[24px] sm:m-0 sm:max-w-[140px]">Get notified</button>
+    </div>
+    
+  </div>
+ </section>
+</body>
+
 </html>
